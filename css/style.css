@@ -82,22 +82,42 @@ nav a:hover, nav p:hover {
 }
 
 .extensao > div {
-    display: none;
+    display: flex;
     flex-direction: column;
     align-self: center;
     width: 75%;
     position: absolute;
     top: 25px;
-    background-color: rgb(206, 199, 190);
-}
-
-.extensao:hover > div {
-    display: flex;
 }
 
 .extensao > div > a {
     border: 1px solid rgb(206, 199, 190);
     box-shadow: 0 1px 1px grey;
+    z-index: -1;
+    max-height: 19px;
+    overflow: hidden;
+}
+
+.extensao > div > :nth-child(1) {
+    transform: translateY(-23px);
+    transition: 0.5s;
+}
+.extensao > div > :nth-child(2) {
+    transform: translateY(-46px);
+    transition: 0.5s;
+}
+.extensao > div > :nth-child(3) {
+    transform: translateY(-69px);
+    transition: 0.5s;
+}
+.extensao > div > :nth-child(4) {
+    transform: translateY(-92px);
+    transition: 0.5s;
+}
+
+.extensao > div > .yo {
+    transform: translateY(0px);
+    z-index: 1;
 }
 
 main {
