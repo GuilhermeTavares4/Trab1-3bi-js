@@ -1,0 +1,101 @@
+main {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:20px;
+    padding-top: 25px;
+}
+
+form {
+    font-size: 20px;
+}
+input{
+    font-size:16px;
+    padding-left:4px;
+}
+
+fieldset {
+    line-height:40px;
+    padding: 0 15px 15px 15px!important;
+    border: 1px solid black!important;
+    border-radius: 5px!important;
+}
+
+legend {
+    font-size: 1.4em;
+    font-weight: 500;
+}
+.form{
+    line-height:40px;
+    text-align:start;
+    margin-left:15%;
+}
+.input {
+    height:35px;
+    width:260px;
+    border:1px solid silver;
+    border-radius:5px;
+}
+input[type="radio"]{
+    width:18px;
+    height:18px;
+    border-radius:18px;
+}
+.botao {
+    height:40px;
+    padding:0 8px;
+    border-radius: 5px;
+    margin-top:15px;
+    line-height:40px;
+    font-size:18px;
+    color:white;
+    background-color:lightslategray;
+    transition: 0.1s;
+}
+.erro > *{
+    padding: 4px;
+    margin-top:10px;
+    background-color:rgb(235, 219, 196);
+    border-radius:5px;
+}
+.inputs{
+    font-size:20px;
+}
+.spans{
+    margin-left:5px;
+    font-weight:bold;
+    font-size:22px;
+}
+.nao{
+    margin-left:10px;
+}
+.erro{
+    font-size:18px;
+    line-height:22px;
+    max-width:350px;
+}
+#sc,#pr{
+    margin-left:8px;
+}
+
+.botao:hover {
+    background-color:rgb(87, 105, 122);
+    transform: scale(1.05);
+}
+
+@media (min-width:835px) {
+    main {
+        flex-direction:row;
+    }
+    form{
+        width:302px;
+        margin-left:15%;
+    }
+    .erro{
+        line-height:25px;
+        max-width:500px;
+    }
+    .form{
+        width:500px;
+    }
+}

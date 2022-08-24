@@ -1,0 +1,28 @@
+main {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
+}
+
+main > p, main > ul > li {
+    margin: 30px 25px 30px 25px;
+}
+
+main > ul > li {
+    text-align: start;
+}
+
+iframe {
+    Height:28.125vw;
+    Width:50vw;
+    margin: 40px;
+}
+
+@media (max-width: 720px) {
+    iframe {
+        Height:47.8125vw;
+        Width:85vw;
+        margin: 40px;    
+    }
+}
