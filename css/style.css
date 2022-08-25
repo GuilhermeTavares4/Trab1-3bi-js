@@ -75,6 +75,7 @@ nav a:hover, nav p:hover {
     flex-grow: 1;
     position: relative;
     text-align: center;
+    cursor:pointer;
 }
 
 .extensao > p {
